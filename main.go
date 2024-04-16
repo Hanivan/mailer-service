@@ -8,6 +8,10 @@ import (
 func main() {
 	app := fiber.New()
 
+	app.Post("/", func(c *fiber.Ctx) error {
+		return c.SendString("OK!")
+	})
+
 	app.Post("/send-email", func(c *fiber.Ctx) error {
 		var params utils.EmailParams
 
