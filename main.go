@@ -28,5 +28,5 @@ func main() {
 		return c.JSON(fiber.Map{"status": "success", "message": "Email sent", "data": response})
 	})
 
-	app.Listen(":3000")
+	app.Listen(":8088")
 }
