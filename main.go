@@ -32,5 +32,5 @@ func main() {
 		return c.JSON(fiber.Map{"status": "success", "message": "Email sent", "data": response})
 	})
 
-	app.Listen(":8088")
+	app.Listen(":8090")
 }
