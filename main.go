@@ -8,7 +8,7 @@ import (
 func main() {
 	app := fiber.New()
 
-	app.Post("/", func(c *fiber.Ctx) error {
+	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("OK!")
 	})
 
